@@ -323,8 +323,8 @@ public class Login extends javax.swing.JFrame {
             if (usuarioService.getValidarUsuarioDAO(usuarioModel)) {
                 usuarioModel = usuarioService.getUsuarioDAO(jtfLogin.getText());
                 setSessionUser();
-             //   new Principal().setVisible(true);
-             new Sales().setVisible(true);
+                //   new Principal().setVisible(true);
+                new Sales().setVisible(true);
                 this.dispose();
             } else {
                 ErrorAlert er = new ErrorAlert(new JFrame(), true);

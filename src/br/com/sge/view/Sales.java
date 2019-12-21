@@ -20,7 +20,7 @@ import javax.swing.table.DefaultTableModel;
  * @author joseluiz
  */
 public class Sales extends javax.swing.JFrame {
-    
+
     public static ProdutoModel produtoModel = new ProdutoModel();
     ProdutoService produtoService = new ProdutoService();
     public static ArrayList<ProdutoModel> listaProdutoModel = new ArrayList<>();
@@ -470,7 +470,7 @@ public class Sales extends javax.swing.JFrame {
             } else {
                 double recibe = Double.parseDouble(jtfQtde.getText());
                 double total = Double.parseDouble(lblTotal.getText());
-                
+
                 if (total > 0.0) {
                     if (recibe > total) {
                         Sales.jtfModify.setText(String.valueOf(recibe - total));
@@ -545,7 +545,7 @@ public class Sales extends javax.swing.JFrame {
     private void jbRemoveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbRemoveActionPerformed
         DefaultTableModel modelo = (DefaultTableModel) Sales.jtSales.getModel();
         if (modelo.getRowCount() > 0) {
-            
+
             int row = Sales.jtSales.getSelectedRow();
             if (Sales.jtSales.getSelectedRowCount() < 1) {
                 ErrorAlert er = new ErrorAlert(new JFrame(), true);
@@ -563,7 +563,7 @@ public class Sales extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        
+
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Metal".equals(info.getName())) {
@@ -582,7 +582,7 @@ public class Sales extends javax.swing.JFrame {
         //</editor-fold>
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
-            
+
             new Sales().setVisible(true);
         });
     }
@@ -627,14 +627,14 @@ public class Sales extends javax.swing.JFrame {
         SimpleDateFormat formatofecha = new SimpleDateFormat("dd/MM/YYYY");
         return formatofecha.format(fecha);
     }
-    
+
     void clearFields() {
         DefaultTableModel modelo = (DefaultTableModel) jtSales.getModel();
-        
+
         while (modelo.getRowCount() > 0) {
             modelo.removeRow(0);
         }
-        
+
         jtfQtde.setText("0");
         jtfModify.setText("0.0");
         lblTotal.setText("0.0");
@@ -642,5 +642,5 @@ public class Sales extends javax.swing.JFrame {
         jtfDate.setText(dateNow());
         new VendasService().returnAmountSale();
     }
-    
+
 }
