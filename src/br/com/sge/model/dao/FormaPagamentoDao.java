@@ -1,6 +1,5 @@
 package br.com.sge.model.dao;
 
-
 import br.com.sge.connection.SGEConnectionMySql;
 import br.com.sge.model.FormaPagamentoModel;
 import java.util.ArrayList;

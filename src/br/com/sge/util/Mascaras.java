@@ -3,7 +3,7 @@ package br.com.sge.util;
 import java.text.DecimalFormat;
 
 /**
- * 
+ *
  * @author joseluiz
  */
 public class Mascaras {
@@ -122,8 +122,9 @@ public class Mascaras {
 
     /**
      * Arredonda com 2 casas decimais.
+     *
      * @param pDouble
-     * @return 
+     * @return
      */
     public double converteArredondar2Casas(double pDouble) {
         DecimalFormat df = new DecimalFormat("#,00");

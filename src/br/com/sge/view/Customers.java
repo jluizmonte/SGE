@@ -18,7 +18,7 @@ public class Customers extends javax.swing.JFrame {
         setLocationRelativeTo(null);
         enableDisableFields(false);
     }
-    
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -414,7 +414,7 @@ public class Customers extends javax.swing.JFrame {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         enableDisableFields(true);
     }//GEN-LAST:event_jButton3ActionPerformed
-    
+
     private void clearFields() {
         jtfAddress.setText("");
         jtfContact1.setText("");
@@ -429,9 +429,9 @@ public class Customers extends javax.swing.JFrame {
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
-        
+
     }
-    
+
     private void enableDisableFields(boolean condicao) {
         jtfAddress.setEnabled(condicao);
         jtfContact1.setEnabled(condicao);

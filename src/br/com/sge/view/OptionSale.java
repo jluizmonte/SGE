@@ -5,7 +5,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 /**
- * 
+ *
  * @author joseluiz
  */
 public class OptionSale extends javax.swing.JDialog {
@@ -16,6 +16,7 @@ public class OptionSale extends javax.swing.JDialog {
 
     /**
      * Creates new form ModalElegir
+     *
      * @param parent
      * @param modal
      */

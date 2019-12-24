@@ -192,7 +192,6 @@ public class WarningAlertAddProduct extends javax.swing.JDialog {
         }
     }//GEN-LAST:event_jbOkKeyTyped
 
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private principal.MaterialButton jbOk;

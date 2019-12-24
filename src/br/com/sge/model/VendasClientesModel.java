@@ -3,7 +3,7 @@ package br.com.sge.model;
 import java.util.ArrayList;
 
 /**
- * 
+ *
  * @author joseluiz
  */
 public class VendasClientesModel {

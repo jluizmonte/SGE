@@ -7,7 +7,7 @@ import javax.swing.JTable;
 import javax.swing.table.DefaultTableCellRenderer;
 
 /**
- * 
+ *
  * @author joseluiz
  */
 public class EstiloTableRenderer extends DefaultTableCellRenderer {

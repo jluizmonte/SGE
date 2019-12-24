@@ -11,7 +11,7 @@ import javax.swing.SwingConstants;
 import javax.swing.table.TableCellRenderer;
 
 /**
- * 
+ *
  * @author joseluiz
  */
 public class EstiloTableHeader implements TableCellRenderer {

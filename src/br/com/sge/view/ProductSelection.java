@@ -455,7 +455,6 @@ public class ProductSelection extends javax.swing.JDialog {
         }
     }
 
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;

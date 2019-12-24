@@ -6,7 +6,7 @@ import java.util.TimerTask;
 import javax.swing.JFrame;
 
 /**
- * 
+ *
  * @author joseluiz
  */
 public class WarningAlertP extends javax.swing.JDialog {

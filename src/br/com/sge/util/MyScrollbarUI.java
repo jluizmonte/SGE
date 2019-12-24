@@ -12,7 +12,7 @@ import javax.swing.JComponent;
 import javax.swing.plaf.basic.BasicScrollBarUI;
 
 /**
- * 
+ *
  * @author joseluiz
  */
 public class MyScrollbarUI extends BasicScrollBarUI {

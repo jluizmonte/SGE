@@ -16,7 +16,7 @@ import java.util.TimerTask;
  * @author joseluiz
  */
 public class dailySpend extends javax.swing.JDialog {
-    
+
     Timer timer = null;
     TimerTask task;
     int i = 32;
@@ -46,7 +46,7 @@ public class dailySpend extends javax.swing.JDialog {
         jScrollPane4.getVerticalScrollBar().setUI(new MyScrollbarUI());
         jScrollPane4.getHorizontalScrollBar().setUI(new MyScrollbarUI());
     }
-    
+
     public static String dateNow() {
         Date fecha = new Date();
         SimpleDateFormat formatofecha = new SimpleDateFormat("dd/MM/YYYY");
@@ -447,11 +447,11 @@ public class dailySpend extends javax.swing.JDialog {
         timer = null;
         task = null;
     }
-    
+
     private void Trasparencia(float trasp) {
         AWTUtilities.setOpacity(this, trasp);
     }
-    
+
     private void localization(int y) {
         this.setLocation(590, y - 260);
     }

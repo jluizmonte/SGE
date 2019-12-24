@@ -1,6 +1,5 @@
 package br.com.sge.view;
 
-
 import br.com.sge.util.EstiloTableHeader;
 import br.com.sge.util.EstiloTableRenderer;
 import br.com.sge.util.MyScrollbarUI;
@@ -8,19 +7,19 @@ import javax.swing.JFrame;
 import javax.swing.ListSelectionModel;
 import javax.swing.event.ListSelectionEvent;
 
-
 /**
- * 
+ *
  * @author joseluiz
  */
 //public class SaleList extends javax.swing.JInternalFrame {
 public class SaleList extends javax.swing.JFrame {
+
     /**
      * Creates new form NewJInternalFrame
      */
     public SaleList() {
         initComponents();
-      //  ((javax.swing.plaf.basic.BasicInternalFrameUI) this.getUI()).setNorthPane(null);
+        //  ((javax.swing.plaf.basic.BasicInternalFrameUI) this.getUI()).setNorthPane(null);
         SaleList.jtSales.getTableHeader().setDefaultRenderer(new EstiloTableHeader());
         SaleList.jtSales.setDefaultRenderer(Object.class, new EstiloTableRenderer());
         SaleList.jtSales.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
@@ -29,7 +28,6 @@ public class SaleList extends javax.swing.JFrame {
         jScrollPane1.getVerticalScrollBar().setUI(new MyScrollbarUI());
         jScrollPane1.getHorizontalScrollBar().setUI(new MyScrollbarUI());
 
-    
         SaleList.jtSales.getSelectionModel().addListSelectionListener((ListSelectionEvent lse) -> {
             if (jtSales.getSelectedRow() != -1) {
                 int fila = jtSales.getSelectedRow();
@@ -329,7 +327,7 @@ public class SaleList extends javax.swing.JFrame {
     }//GEN-LAST:event_jbDeleteActionPerformed
 
     private void jbSearchKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jbSearchKeyReleased
-     
+
     }//GEN-LAST:event_jbSearchKeyReleased
 
     private void jbSearchKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jbSearchKeyTyped
@@ -346,10 +344,9 @@ public class SaleList extends javax.swing.JFrame {
         new dailySpend(new JFrame(), true).setVisible(true);
     }//GEN-LAST:event_jbDailySpendActionPerformed
 
-private void viewSales()
-{
-    
-}
+    private void viewSales() {
+
+    }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;

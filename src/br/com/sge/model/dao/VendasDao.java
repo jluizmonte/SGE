@@ -76,7 +76,7 @@ public class VendasDao extends SGEConnectionMySql implements IVendasDao {
                     + " pk_id_vendas = '" + pIdVenda + "'"
                     + ";"
             );
-            
+
             while (this.getResultSet().next()) {
                 modelVendas.setIdVenda(this.getResultSet().getInt(1));
                 modelVendas.setCliente(this.getResultSet().getInt(2));
@@ -120,7 +120,7 @@ public class VendasDao extends SGEConnectionMySql implements IVendasDao {
                     + " tbl_vendas"
                     + ";"
             );
-            
+
             while (this.getResultSet().next()) {
                 modelVendas = new VendasModel();
                 modelVendas.setIdVenda(this.getResultSet().getInt(1));
@@ -196,7 +196,7 @@ public class VendasDao extends SGEConnectionMySql implements IVendasDao {
             this.fecharConexao();
         }
     }
-    
+
     @Override
     public void returnAmountSale() {
         int numSale = 0;
@@ -205,11 +205,11 @@ public class VendasDao extends SGEConnectionMySql implements IVendasDao {
             this.executarSQL(
                     "SELECT MAX(pk_id_vendas) FROM tbl_vendas;"
             );
-            
+
             if (this.getResultSet().next()) {
                 numSale = this.getResultSet().getInt(1);
             }
-            
+
             if (numSale == 0) {
                 Sales.lblSaleNumber.setText("1");
             } else {
@@ -221,5 +221,5 @@ public class VendasDao extends SGEConnectionMySql implements IVendasDao {
             this.fecharConexao();
         }
     }
-    
+
 }

@@ -6,8 +6,8 @@ package br.com.sge.model;
  */
 public class SessaoUsuarioModel {
 
-	public static int codigoUsuario;
-	public static String nomeUsuario;
-	public static String loginUsuario;
-	public static String tipoUsuario;
+    public static int codigoUsuario;
+    public static String nomeUsuario;
+    public static String loginUsuario;
+    public static String tipoUsuario;
 }

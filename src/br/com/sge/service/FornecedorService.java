@@ -5,7 +5,7 @@ import br.com.sge.model.FornecedorModel;
 import br.com.sge.model.dao.FornecedorDao;
 
 /**
- * 
+ *
  * @author joseluiz
  */
 public class FornecedorService {
